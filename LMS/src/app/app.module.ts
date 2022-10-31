@@ -12,9 +12,7 @@ import { UserentryComponent } from './user/userentry/userentry.component';
 import { UserlistingComponent } from './user/userlisting/userlisting.component';
 import { LoanofficerComponent } from './loanofficer/loanofficer.component';
 import { LoginComponent } from './login/login.component';
-import { LoanapplicationComponent } from './user/loanapplication/loanapplication.component';
-import { CustomerentryComponent } from './user/userentry/customerentry/customerentry.component';
-import { AdminentryComponent } from './user/userentry/adminentry/adminentry.component';
+import { CustomerComponent } from './customer/customer.component';
 
 @NgModule({
   declarations: [
@@ -28,9 +26,7 @@ import { AdminentryComponent } from './user/userentry/adminentry/adminentry.comp
     UserlistingComponent,
     LoanofficerComponent,
     LoginComponent,
-    LoanapplicationComponent,
-    CustomerentryComponent,
-    AdminentryComponent
+    CustomerComponent
   ],
   imports: [
     BrowserModule,
