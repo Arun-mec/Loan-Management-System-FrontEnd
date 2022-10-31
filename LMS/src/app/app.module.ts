@@ -15,9 +15,7 @@ import { SharedComponent } from './shared/shared.component';
 import { RoleComponent } from './shared/role/role.component';
 import { LoanComponent } from './shared/loan/loan.component';
 import { LoginComponent } from './login/login.component';
-import { LoanapplicationComponent } from './user/loanapplication/loanapplication.component';
-import { CustomerentryComponent } from './user/userentry/customerentry/customerentry.component';
-import { AdminentryComponent } from './user/userentry/adminentry/adminentry.component';
+import { CustomerComponent } from './customer/customer.component';
 
 @NgModule({
   declarations: [
@@ -34,9 +32,7 @@ import { AdminentryComponent } from './user/userentry/adminentry/adminentry.comp
     RoleComponent,
     LoanComponent,
     LoginComponent,
-    LoanapplicationComponent,
-    CustomerentryComponent,
-    AdminentryComponent
+    CustomerComponent
   ],
   imports: [
     BrowserModule,
