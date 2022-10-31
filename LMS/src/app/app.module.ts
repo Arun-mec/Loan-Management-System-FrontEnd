@@ -9,10 +9,13 @@ import { AdminuserviewComponent } from './admin/adminuserview/adminuserview.comp
 import { AdminloanofficerviewComponent } from './admin/adminloanofficerview/adminloanofficerview.component';
 import { UserComponent } from './user/user.component';
 import { UserentryComponent } from './user/userentry/userentry.component';
-import { UserlistingComponent } from './user/userlisting/userlisting.component';
 import { LoanofficerComponent } from './loanofficer/loanofficer.component';
 import { LoginComponent } from './login/login.component';
 import { CustomerComponent } from './customer/customer.component';
+import { CustomerhomeComponent } from './customer/customerhome/customerhome.component';
+import { LoanofficerhomeComponent } from './loanofficer/loanofficerhome/loanofficerhome.component';
+import { LoanapplicationComponent } from './loan/loanapplication/loanapplication.component';
+import { LoandetailsComponent } from './loan/loandetails/loandetails.component';
 
 @NgModule({
   declarations: [
@@ -23,10 +26,13 @@ import { CustomerComponent } from './customer/customer.component';
     AdminloanofficerviewComponent,
     UserComponent,
     UserentryComponent,
-    UserlistingComponent,
     LoanofficerComponent,
     LoginComponent,
-    CustomerComponent
+    CustomerComponent,
+    CustomerhomeComponent,
+    LoanofficerhomeComponent,
+    LoanapplicationComponent,
+    LoandetailsComponent
   ],
   imports: [
     BrowserModule,
