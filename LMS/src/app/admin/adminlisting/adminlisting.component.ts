@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { User } from 'src/app/shared/user';
+import { UserService } from '../../shared/user.service'
 
 @Component({
   selector: 'app-adminlisting',
@@ -7,9 +9,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AdminlistingComponent implements OnInit {
 
-  constructor() { }
+  constructor(public userService:UserService) { }
 
   ngOnInit(): void {
+    this.userService.bindGetAllCustomersList();
+    this.userService.bindGetAllLoanOfficersList();
   }
-
 }

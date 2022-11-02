@@ -6,8 +6,14 @@
             <div class="card-body p-4 p-md-5">
               <h3 class="mb-1 pb-2 pb-md-0 mb-md-5">Registration Form</h3>
               
-              <a href="../adminentry">Admin Registration</a> 
-              <a href="../customerentry">Customer Registration</a> 
+              di
+              <h4 class="display-5" onclick="showForm = true">Customer Entry</h4>
+              <h4 class="display-5" onclick="showForm = false">Admin Entry</h4>
+
+              <div *ngIf="showForm">
+
+              </div>
+              <div *ngIf="!showForm"></div>
 
             </div>
           </div>

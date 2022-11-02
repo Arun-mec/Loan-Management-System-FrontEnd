@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class UserentryComponent implements OnInit {
 
+  showForm:boolean = true;
+
   constructor() { }
 
   ngOnInit(): void {

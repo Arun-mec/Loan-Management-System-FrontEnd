@@ -13,6 +13,8 @@ import { UserlistingComponent } from './user/userlisting/userlisting.component';
 import { LoanofficerComponent } from './loanofficer/loanofficer.component';
 import { LoginComponent } from './login/login.component';
 import { CustomerComponent } from './customer/customer.component';
+import { HttpClientModule } from '@angular/common/http';
+import { AdminentryComponent } from './admin/adminentry/adminentry.component';
 
 @NgModule({
   declarations: [
@@ -26,11 +28,13 @@ import { CustomerComponent } from './customer/customer.component';
     UserlistingComponent,
     LoanofficerComponent,
     LoginComponent,
-    CustomerComponent
+    CustomerComponent,
+    AdminentryComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

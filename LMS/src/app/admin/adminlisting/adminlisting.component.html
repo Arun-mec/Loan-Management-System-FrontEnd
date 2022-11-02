@@ -17,13 +17,13 @@
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <td scope="col">1</td>
-            <td scope="col">Arun</td>
-            <td scope="col">23423423</td>
-            <td scope="col">Approved</td>
-            <td scope="col">2022-02-02</td>
-            <td scope="col"><a href="/viewaccount" style="text-decoration: none;">View account</a></td>
+          <tr *ngFor="let customer of userService.customers">
+            <td scope="col">{{customer.userId}}</td>
+            <td scope="col">{{customer.userName}}</td>
+            <td scope="col">{{customer.accNo}}</td>
+            <td scope="col">{{customer.accStatus}}</td>
+            <td scope="col">{{customer.date}}</td>
+            <td scope="col"><a href="../viewaccount/user.userId" style="text-decoration: none;">>View account</a></td>
           </tr>
         </tbody>
       </table>
@@ -40,7 +40,7 @@
               </tr>
         </thead>
         <tbody>
-          <tr>
+          <tr *ngFor="let customer of userService.customers">
             <th scope="row">1</th>
             <td scope="row">Mark</td>
             <td scope="row">Otto</td>
